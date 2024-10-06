@@ -40,7 +40,7 @@ const Hero = () => {
                 Build with Redot
                 <WordRotate
                   words={['2D games', '3D worlds', 'XR apps', 'Cross-play']}
-                  className='text-orange-500'
+                  className='bg-gradient-to-r from-red-500 to-orange-600 bg-clip-text text-transparent'
                 />
               </span>
             </h1>
