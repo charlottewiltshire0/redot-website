@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <div>
+    <div className=''>
       <div>
         <Spotlight
           className='-top-40 left-10 h-screen md:-top-20 md:left-32'
@@ -58,7 +58,10 @@ const Hero = () => {
             </div>
           </div>
           <div className='relative hidden h-full w-full xl:block'>
-            <div className='mb-2 flex w-full flex-row items-end justify-end pr-4'></div>
+            <video className='rounded-lg' loop={true} muted={true} autoPlay>
+              <source src='/video.mp4' type='video/mp4' />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
