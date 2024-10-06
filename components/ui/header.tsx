@@ -2,6 +2,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { links, social } from '@/data';
 import { Button } from '@/components/ui/button';
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from '@/components/ui/sheet';
+import { MenuIcon } from 'lucide-react';
+import { MobileSidebar } from '@/components/ui/mobile-sidebar';
 
 const Header = () => {
   return (
@@ -19,8 +29,8 @@ const Header = () => {
                   <Image
                     src='/logo.png'
                     alt='Logo'
-                    width={50}
-                    height={50}
+                    width={21}
+                    height={21}
                     loading='lazy'
                     decoding='async'
                     data-nimg='1'
@@ -60,6 +70,23 @@ const Header = () => {
               </Link>
             </Button>
           </div>
+        </div>
+      </div>
+      <div className='block lg:hidden'>
+        <div className='flex w-full items-center justify-between rounded-md px-4 py-4'>
+          <Link href='/' className='flex items-center gap-1.5'>
+            <Image
+              src='/logo.png'
+              alt='Logo'
+              width={24}
+              height={24}
+              loading='lazy'
+              decoding='async'
+              data-nimg='1'
+              className='hidden text-transparent dark:block'
+            />
+          </Link>
+          <MobileSidebar />
         </div>
       </div>
     </header>
