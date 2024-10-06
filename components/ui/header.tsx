@@ -34,8 +34,9 @@ const Header = () => {
             </Link>
           </div>
           <nav className='flex items-center space-x-6 text-sm font-medium xl:flex'>
-            {links.map((link, idx) => (
+            {links.map((link) => (
               <a
+                key={link.label}
                 className='hover:text-foreground/80 text-foreground/60 hidden space-x-1 transition-colors sm:flex'
                 href={link.href}
               >
@@ -43,9 +44,10 @@ const Header = () => {
               </a>
             ))}
           </nav>
-          <div className='flex flex-1 items-center justify-end gap-2 text-sm sm:gap-2 md:justify-end'>
-            {social.map((link, idx) => (
+          <div className='flex flex-1 items-center justify-end gap-3 text-sm sm:gap-3 md:justify-end'>
+            {social.map((link) => (
               <a
+                key={link.label}
                 className='hover:text-foreground/80 text-foreground/60 hidden space-x-1 transition-colors sm:flex'
                 href={link.href}
               >
