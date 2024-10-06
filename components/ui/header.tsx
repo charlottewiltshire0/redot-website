@@ -2,22 +2,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { links, social } from '@/data';
 import { Button } from '@/components/ui/button';
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from '@/components/ui/sheet';
-import { MenuIcon } from 'lucide-react';
 import { MobileSidebar } from '@/components/ui/mobile-sidebar';
 
 const Header = () => {
   return (
-    <header className='sticky top-0 z-[50] w-full border-b border-transparent bg-transparent'>
+    <header className='sticky top-0 z-[50] w-full border-b border-transparent bg-black'>
       <div className='hidden lg:block'>
-        <div className='mx-auto flex h-16 max-w-[88rem] items-center px-8'>
+        <div className='mx-auto flex h-14 max-w-[88rem] items-center px-8'>
           <div className='mr-4 hidden md:flex'>
             <Link
               className='mr-10 flex items-center justify-center space-x-2 py-6 text-center text-2xl font-bold text-neutral-600 selection:bg-emerald-500 dark:text-gray-100'
@@ -54,7 +45,7 @@ const Header = () => {
               </a>
             ))}
           </nav>
-          <div className='flex flex-1 items-center justify-end gap-3 text-sm sm:gap-3 md:justify-end'>
+          <div className='flex flex-1 items-center justify-end gap-4 text-sm sm:gap-4 md:justify-end'>
             {social.map((link) => (
               <a
                 key={link.label}
