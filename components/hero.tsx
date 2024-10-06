@@ -21,9 +21,9 @@ const Hero = () => {
         {/* Radial gradient for the container to give a faded look */}
         <div className='pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black'></div>
       </div>
-      <div className='relative z-20 mx-auto w-full max-w-[84rem]'>
+      <div className='relative z-20 mx-auto mt-14 w-full max-w-[84rem]'>
         <div
-          className='grid grid-cols-1 gap-10 pb-10 md:pb-40 xl:grid-cols-2'
+          className='grid grid-cols-1 items-center justify-center gap-10 pb-10 md:pb-40 xl:grid-cols-2'
           style={{ opacity: 1, transform: 'none' }}
         >
           <div className='flex flex-col items-start px-8 xl:px-0'>
