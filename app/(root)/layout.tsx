@@ -1,4 +1,5 @@
 import Header from '@/components/ui/header';
+import Warning from '@/components/ui/warning';
 
 export default function RootLayout({
   children,
@@ -7,6 +8,9 @@ export default function RootLayout({
 }) {
   return (
     <>
+      <Warning href='https://github.com/charlottewiltshire0/redot-website'>
+        The website is under development.
+      </Warning>
       <Header />
       {children}
     </>
