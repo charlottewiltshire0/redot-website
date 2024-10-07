@@ -1,12 +1,17 @@
 import {
-  IconArrowWaveRightUp,
+  IconBrandGithub,
   IconClipboardCopy,
+  IconCube,
+  IconDeviceGamepad2,
+  IconDeviceImac,
   IconFileBroken,
   IconSignature,
   IconTableColumn,
 } from '@tabler/icons-react';
-import { Skeleton } from '@/components/ui/skeleton';
 import Image from 'next/image';
+import { AnimatedBeamMultipleOutputCrossPlatform } from '@/components/ui/animated-beam-multiple-output-cross-platform';
+import Globe from '@/components/ui/globe';
+import ParticleRing from '@/components/ui/particle-ring';
 
 export const links = [
   {
@@ -100,5 +105,62 @@ export const news = [
     ),
     icon: <IconTableColumn className='h-4 w-4 text-neutral-500' />,
     href: 'https://godotengine.org/article/rendering-priorities-september-2024/',
+  },
+];
+
+export const features = [
+  {
+    Icon: IconDeviceGamepad2,
+    name: 'Dedicated 2D Engine',
+    description:
+      "Create sharp and high-performance 2D games using Redot Engine's specialized 2D rendering engine, featuring true 2D pixel coordinates and a comprehensive array of 2D nodes.",
+    href: '/features/#features_2d',
+    cta: 'Learn more',
+    background: (
+      <Image
+        className='absolute -right-20 -top-20 object-cover transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105'
+        alt='Innovative Design'
+        fill
+        src='https://godotengine.org/assets/home/features/2d.webp'
+      />
+    ),
+    className: 'col-span-3 lg:col-span-1',
+  },
+  {
+    Icon: IconBrandGithub,
+    name: 'Open Source',
+    description:
+      'Experience genuine open development with Redot Engine, where every contributor benefits equally from the collective efforts and innovations of the community.',
+    href: '/#get_involved',
+    cta: 'Learn more',
+    background: (
+      <Globe className='absolute left-80 top-20 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_50%,#000_100%)] group-hover:scale-105' />
+    ),
+    className: 'col-span-3 lg:col-span-2',
+  },
+  {
+    Icon: IconCube,
+    name: 'Simple and Powerful 3D',
+    description:
+      "Redot Engine's 3D nodes provide all the tools you need to effortlessly build, animate, and render stunning 3D worlds and characters.",
+    href: '/features/#features_3d',
+    cta: 'Learn more',
+    background: (
+      <div className='absolute'>
+        <ParticleRing />,
+      </div>
+    ),
+    className: 'col-span-3 lg:col-span-2',
+  },
+  {
+    Icon: IconDeviceImac,
+    name: 'Release on All Platforms',
+    description: 'Deploy games quickly on desktop, mobile, and web.',
+    href: '/features/#deploy',
+    cta: 'Learn more',
+    background: (
+      <AnimatedBeamMultipleOutputCrossPlatform className='absolute right-2 top-4 h-[300px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105' />
+    ),
+    className: 'col-span-3 lg:col-span-1',
   },
 ];
