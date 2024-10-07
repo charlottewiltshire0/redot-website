@@ -27,7 +27,6 @@ const News = () => {
               description={item.description}
               icon={item.icon}
               href={item.href}
-              header={item.header}
               className={index === 2 ? 'col-start-auto md:col-start-2' : ''}
             />
           ))}
