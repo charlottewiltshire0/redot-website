@@ -1,5 +1,6 @@
 import Hero from '@/components/hero';
 import News from '@/components/news';
+import Features from '@/components/features';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         </div>
         <Hero />
         <News />
+        <Features />
       </div>
     </>
   );
