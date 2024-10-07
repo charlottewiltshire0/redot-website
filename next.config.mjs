@@ -8,6 +8,12 @@ const nextConfig = {
         port: '',
         pathname: '/storage/blog/covers/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'godotengine.org',
+        port: '',
+        pathname: '/assets/*/**',
+      },
     ],
   },
 };
