@@ -17,10 +17,6 @@ const Hero = () => {
           fill='white'
         />
       </div>
-      <div className='absolute left-0 top-0 flex h-screen w-full items-center justify-center bg-white bg-grid-black/[0.2] dark:bg-black dark:bg-grid-white/[0.03]'>
-        {/* Radial gradient for the container to give a faded look */}
-        <div className='pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black'></div>
-      </div>
       <div className='relative z-20 mx-auto mt-14 w-full max-w-[84rem]'>
         <div
           className='grid grid-cols-1 items-center justify-center gap-10 pb-10 md:pb-40 xl:grid-cols-2'
