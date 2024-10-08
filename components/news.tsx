@@ -17,7 +17,6 @@ const News = () => {
             description={news[0].description}
             header={news[0].header}
             icon={news[0].icon}
-            href={news[0].href}
             className='row-span-1 md:row-span-3'
           />
 
@@ -27,7 +26,6 @@ const News = () => {
               title={item.title}
               description={item.description}
               icon={item.icon}
-              href={item.href}
               className={index === 2 ? 'col-start-auto md:col-start-2' : ''}
             />
           ))}
