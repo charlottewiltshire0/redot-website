@@ -146,7 +146,7 @@ export const features = [
     href: '/features/#features_3d',
     cta: 'Learn more',
     background: (
-      <div className='absolute'>
+      <div className='absolute w-full transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105'>
         <ParticleRing />,
       </div>
     ),
