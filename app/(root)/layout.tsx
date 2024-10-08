@@ -1,5 +1,6 @@
 import Header from '@/components/ui/header';
 import Warning from '@/components/ui/warning';
+import Footer from '@/components/ui/footer';
 
 export default function RootLayout({
   children,
@@ -13,6 +14,7 @@ export default function RootLayout({
       </Warning>
       <Header />
       {children}
+      <Footer />
     </>
   );
 }
