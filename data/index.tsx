@@ -164,3 +164,33 @@ export const features = [
     className: 'col-span-3 lg:col-span-1',
   },
 ];
+
+export const footer_links_first = [
+  {
+    name: 'Download',
+    href: 'https://github.com/Redot-Engine/redot-engine',
+  },
+  {
+    name: 'Documentation',
+    href: 'https://github.com/Redot-Engine/redot-docs',
+  },
+  {
+    name: 'Features',
+    href: '/features',
+  },
+  {
+    name: 'Source Code',
+    href: 'https://github.com/Redot-Engine',
+  },
+];
+
+export const footer_links_asset = [
+  {
+    name: 'Asset Library',
+    href: '/asset',
+  },
+  {
+    name: 'Press Kit',
+    href: 'https://cdn.discordapp.com/attachments/1290096105094385695/1292789668907057292/Redot_Engine_-_Brand_Kit_v.1FINAL.zip?ex=67065533&is=670503b3&hm=f707050fa0c85bbc0a02cab2602917f07aa592a19f33d0479317b6609b6bf804&',
+  },
+];
