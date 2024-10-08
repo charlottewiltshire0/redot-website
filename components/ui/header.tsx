@@ -38,7 +38,7 @@ const Header = () => {
             {links.map((link) => (
               <a
                 key={link.label}
-                className='hover:text-foreground/80 text-foreground/60 hidden space-x-1 transition-colors sm:flex'
+                className='hidden space-x-1 text-foreground/60 transition-colors hover:text-foreground/80 sm:flex'
                 href={link.href}
               >
                 {link.label}
@@ -47,13 +47,14 @@ const Header = () => {
           </nav>
           <div className='flex flex-1 items-center justify-end gap-4 text-sm sm:gap-4 md:justify-end'>
             {social.map((link) => (
-              <a
+              <Link
                 key={link.label}
-                className='hover:text-foreground/80 text-foreground/60 hidden space-x-1 transition-colors sm:flex'
+                target='__blank'
+                className='hidden space-x-1 text-foreground/60 transition-colors hover:text-foreground/80 sm:flex'
                 href={link.href}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
             <Button size='sm' asChild>
               <Link href='https://github.com/Redot-Engine/redot-engine'>
