@@ -32,8 +32,8 @@ const News = () => {
             />
           ))}
         </BentoGridNews>
-        <div className='flex flex-row items-center justify-between px-0 md:px-8'>
-          <h2 className='relative w-[50%] text-left text-sm leading-loose tracking-wide text-zinc-500 antialiased dark:text-zinc-300 sm:text-xl'>
+        <div className='flex flex-row items-center justify-between'>
+          <h2 className='relative w-[50%] text-left text-sm leading-loose tracking-wide text-zinc-500 antialiased dark:text-zinc-300 sm:text-lg'>
             Want to see more news?
           </h2>
           <Button variant='secondary' asChild>
