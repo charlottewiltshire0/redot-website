@@ -29,6 +29,7 @@
     "react-dom": "^18",
     "react-icon-cloud": "^4.1.4",
     "react-spring": "^9.7.4",
+    "simplex-noise": "^4.0.3",
     "tailwind-merge": "^2.5.3",
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.169.0"
