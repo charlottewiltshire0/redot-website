@@ -49,9 +49,19 @@ const Hero = () => {
               innovative ideas in XR technology with Redot Engine!
             </h2>
             <div className='relative mb-4 flex w-full flex-col justify-center space-y-2 sm:flex-row sm:justify-start sm:space-x-4 sm:space-y-0'>
-              <Button size='lg'>Download Latest</Button>
+              <Button size='lg' asChild>
+                <Link
+                  href='https://github.com/Redot-Engine/redot-engine'
+                  target='__blank'
+                >
+                  Download Latest
+                </Link>
+              </Button>
               <Button size='lg' variant='outline' asChild>
-                <Link href='https://github.com/Redot-Engine/redot-docs'>
+                <Link
+                  href='https://github.com/Redot-Engine/redot-docs'
+                  target='__blank'
+                >
                   Learn Redot
                 </Link>
               </Button>
