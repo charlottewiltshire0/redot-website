@@ -1,6 +1,7 @@
 import Hero from '@/components/hero';
 import News from '@/components/news';
 import Features from '@/components/features';
+import Start from '@/components/start';
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
         <Hero />
         <News />
         <Features />
+      </div>
+      <div className='overflow-hidden'>
+        <Start />
       </div>
     </>
   );
