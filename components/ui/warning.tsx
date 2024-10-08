@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Warning = ({
   children,
-  href,
+  href = '/',
 }: {
   children?: string | React.ReactNode;
   href?: string;
