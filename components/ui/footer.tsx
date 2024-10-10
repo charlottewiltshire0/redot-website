@@ -4,13 +4,14 @@ import { footer_links_asset, footer_links_first, social } from '@/data';
 
 const Footer = () => {
   return (
-    <footer className='bottom-0 z-[50] w-full border-t border-neutral-100 bg-black px-8 py-20 dark:border-white/[0.1]'>
+    <footer className='bottom-0 z-[50] w-full border-t border-neutral-400 bg-black px-8 py-20 dark:border-white/[0.1]'>
       <div className='mx-auto flex max-w-7xl flex-col items-start justify-between text-sm text-neutral-500 sm:flex-row'>
         <div>
           <div className='mb-4 mr-4 md:flex'>
             <Link
               className='mr-10 flex items-center justify-center space-x-2 py-0 text-center text-2xl font-bold text-neutral-600 selection:bg-emerald-500 dark:text-gray-100'
               href='/'
+              aria-label='Go to homepage'
             >
               <div className='relative flex h-8 w-8 items-center justify-center rounded-md border border-slate-800 bg-black text-sm text-white antialiased md:h-6 md:w-6'>
                 <div className='absolute inset-x-0 -top-10 h-10 w-full rounded-full bg-white/[0.2] blur-xl'></div>
@@ -34,9 +35,11 @@ const Footer = () => {
               </div>
             </Link>
           </div>
-          <div>リードット</div>
-          <div className='mt-2'>Fork of the Godot Engine. Mak Gam.</div>
-          <div className='mt-2'>
+          <div className='text-lg font-semibold text-gray-300'>リードット</div>
+          <div className='mt-2 text-sm text-gray-400'>
+            Fork of the Godot Engine. Mak Gam.
+          </div>
+          <div className='mt-2 text-gray-400'>
             Website&nbsp;
             <Link
               className='font-medium text-neutral-600 dark:text-sky-500'
