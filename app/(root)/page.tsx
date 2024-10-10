@@ -1,7 +1,13 @@
+import dynamic from 'next/dynamic';
+
 import Hero from '@/components/hero';
 import News from '@/components/news';
-import Features from '@/components/features';
 import Start from '@/components/start';
+
+const Features = dynamic(() => import('@/components/features'), {
+  loading: () => <p>Loading features...</p>,
+  ssr: false,
+});
 
 export default function Home() {
   return (
