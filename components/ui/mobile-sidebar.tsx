@@ -12,7 +12,7 @@ import { links, social } from '@/data';
 export const MobileSidebar = () => {
   return (
     <Sheet>
-      <SheetTrigger>
+      <SheetTrigger aria-label='Open Menu'>
         <MenuIcon />
       </SheetTrigger>
       <SheetContent side='left'>
