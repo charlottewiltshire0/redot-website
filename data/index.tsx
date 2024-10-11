@@ -17,11 +17,6 @@ const Globe = dynamic(() => import('@/components/ui/globe'), {
   loading: () => <Skeleton className='h-full w-full' />,
 });
 
-const ParticleRing = dynamic(() => import('@/components/ui/particle-ring'), {
-  ssr: true,
-  loading: () => <Skeleton className='h-full w-full' />,
-});
-
 const AnimatedBeamMultipleOutputCrossPlatform = dynamic(() =>
   import('@/components/ui/animated-beam-multiple-output-cross-platform').then(
     (mod) => mod.AnimatedBeamMultipleOutputCrossPlatform
@@ -162,7 +157,18 @@ export const features = [
     cta: 'Learn more',
     background: (
       <div className='absolute w-full transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105'>
-        <ParticleRing />,
+        <video
+          loop={true}
+          controls={false}
+          preload='auto'
+          autoPlay={true}
+          muted={true}
+        >
+          <source
+            src='https://rr5---sn-4g5e6ns7.googlevideo.com/videoplayback?expire=1728672429&ei=TR4JZ_qiOIWLkucP7YuAWA&ip=45.13.239.75&id=o-AL9EnprOSis7rU_YoZAwCM0yCG7rxxU9EDOdhOnuckkw&itag=137&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&bui=AXLXGFQhTPMxll0FJpnxUZyoxzGQV-N7ZnuaspoGs8srMTYfs5LdPzODdCx3yQCFLye9wfckKhRVrqq6&vprv=1&mime=video%2Fmp4&rqh=1&gir=yes&clen=39812075&dur=103.061&lmt=1700298779524412&keepalive=yes&fexp=24350655,24350673,51300761&c=MEDIA_CONNECT_FRONTEND&txp=5319224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cvprv%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRgIhAOS6wRkerHLV4CHQPfp8wWDs7nihlKmxGSOFnieuJvYGAiEAxDQLkhVkCvgzDqFnRvN4d-TgtNX6R0U4VeYZDT-avIQ%3D&rm=sn-4g5ers7e&rrc=104,80&req_id=652340e88676a3ee&ipbypass=yes&redirect_counter=2&cm2rm=sn-f5fee7l&cms_redirect=yes&cmsv=e&met=1728650835,&mh=K1&mip=2a09:bac1:7520:28::84:a9&mm=34&mn=sn-4g5e6ns7&ms=ltu&mt=1728650434&mv=m&mvi=5&pl=64&rms=ltu,au&lsparams=ipbypass,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=ACJ0pHgwRQIhANqq7v4GfDjaGZ3R3IGJye729RkgqEMvoJAcEC6dtRDwAiBQ1P2ThljHqiRJztoTJptGwXZwjGouNIZIFzzfAoE6Ig%3D%3D'
+            type='video/mp4'
+          />
+        </video>
       </div>
     ),
     className: 'col-span-3 lg:col-span-2',

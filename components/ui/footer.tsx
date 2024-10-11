@@ -4,7 +4,7 @@ import { footer_links_asset, footer_links_first, social } from '@/data';
 
 const Footer = () => {
   return (
-    <footer className='bottom-0 z-[50] w-full border-t border-neutral-400 bg-black px-8 py-20 dark:border-white/[0.1]'>
+    <footer className='relative bottom-0 z-[50] w-full border-t border-neutral-400 bg-black px-8 py-20 dark:border-white/[0.1]'>
       <div className='mx-auto flex max-w-7xl flex-col items-start justify-between text-sm text-neutral-500 sm:flex-row'>
         <div>
           <div className='mb-4 mr-4 md:flex'>

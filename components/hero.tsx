@@ -1,12 +1,12 @@
 import { Spotlight } from '@/components/ui/spotlight';
 import { WordRotate } from '@/components/ui/word-rotate';
-import { ArrowRightIcon } from '@radix-ui/react-icons';
 import AnimatedShinyText from '@/components/ui/animated-shiny-text';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Suspense } from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
+import { IconArrowNarrowRight } from '@tabler/icons-react';
 
 const Hero = () => {
   return (
@@ -32,7 +32,7 @@ const Hero = () => {
                 <Link href='https://github.com/Redot-Engine/redot-demo-projects'>
                   ✨ Introducing Redot Engine
                 </Link>
-                <ArrowRightIcon className='ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5' />
+                <IconArrowNarrowRight className='ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5' />
               </AnimatedShinyText>
             </div>
             <h1 className='relative mb-6 max-w-4xl text-left text-4xl font-bold text-zinc-700 dark:text-zinc-100 md:text-7xl'>
@@ -50,12 +50,7 @@ const Hero = () => {
             </h2>
             <div className='relative mb-4 flex w-full flex-col justify-center space-y-2 sm:flex-row sm:justify-start sm:space-x-4 sm:space-y-0'>
               <Button size='lg' asChild>
-                <Link
-                  href='https://github.com/Redot-Engine/redot-engine'
-                  target='__blank'
-                >
-                  Download Latest
-                </Link>
+                <Link href='/download'>Download Latest</Link>
               </Button>
               <Button size='lg' variant='outline' asChild>
                 <Link
@@ -85,7 +80,7 @@ const Hero = () => {
                 Want to see more games created with Redot?
               </h2>
               <Button asChild>
-                <Link href='https://discord.gg/redot'>
+                <Link href='https://discord.gg/redot' target='_blank'>
                   Join Our Community &rarr;
                 </Link>
               </Button>

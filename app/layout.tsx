@@ -9,6 +9,10 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  creator: 'Redot Engine',
+  appleWebApp: true,
+  applicationName:
+    'Redot Engine - Free and Open Source Fork of Godot for 2D and 3D Game Development',
   title:
     'Redot Engine - Free and Open Source Fork of Godot for 2D and 3D Game Development',
   description:
