@@ -57,9 +57,7 @@ const Header = () => {
               </Link>
             ))}
             <Button size='sm' asChild>
-              <Link href='https://github.com/Redot-Engine/redot-engine'>
-                Download
-              </Link>
+              <Link href='/download'>Download</Link>
             </Button>
           </div>
         </div>

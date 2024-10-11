@@ -6,13 +6,16 @@ import Link from 'next/link';
 import { CoolMode } from '@/components/ui/cool-mode';
 
 const Download = () => {
-  const platform = window.navigator.userAgent.includes('Win')
-    ? 'Windows'
-    : window.navigator.userAgent.includes('Mac')
-      ? 'Mac'
-      : window.navigator.userAgent.includes('Linux')
-        ? 'Linux'
-        : 'your platform';
+  const platform =
+    typeof window !== 'undefined'
+      ? window.navigator.userAgent.includes('Win')
+        ? 'Windows'
+        : window.navigator.userAgent.includes('Mac')
+          ? 'Mac'
+          : window.navigator.userAgent.includes('Linux')
+            ? 'Linux'
+            : 'your platform'
+      : null;
 
   const platformDownloadLink =
     platform === 'Windows'
@@ -34,18 +37,28 @@ const Download = () => {
                   Download Redot for
                   <GradualSpacing
                     className='font-display text-center text-4xl font-bold -tracking-widest text-black dark:text-white md:text-7xl md:leading-[5rem]'
-                    text={platform}
+                    text={platform as string}
                   />
                 </span>
               </h1>
-              <div className='mb-4 flex w-full flex-col items-center justify-center space-y-2 sm:flex-row sm:justify-start sm:space-x-4 sm:space-y-0 sm:px-0 md:px-12'>
+              <div className='mb-4 flex w-full flex-col items-center justify-center space-y-6 sm:space-x-4 sm:px-0 md:px-12'>
                 <CoolMode>
                   <Button className='w-full' size='lg' asChild>
                     <Link href={platformDownloadLink} target='__blank'>
-                      Redot Engine
+                      Download Latest
                     </Link>
                   </Button>
                 </CoolMode>
+                <div className='text-gray-400'>
+                  Looking for{' '}
+                  <Link
+                    className='font-medium text-neutral-600 dark:text-sky-500'
+                    target='_blank'
+                    href='https://github.com/Redot-Engine/redot-engine/releases/'
+                  >
+                    previous versions?
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
