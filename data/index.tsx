@@ -9,9 +9,24 @@ import {
   IconTableColumn,
 } from '@tabler/icons-react';
 import Image from 'next/image';
-import { AnimatedBeamMultipleOutputCrossPlatform } from '@/components/ui/animated-beam-multiple-output-cross-platform';
-import Globe from '@/components/ui/globe';
-import ParticleRing from '@/components/ui/particle-ring';
+import dynamic from 'next/dynamic';
+import { Skeleton } from '@/components/ui/skeleton';
+
+const Globe = dynamic(() => import('@/components/ui/globe'), {
+  ssr: false,
+  loading: () => <Skeleton className='h-full w-full' />,
+});
+
+const ParticleRing = dynamic(() => import('@/components/ui/particle-ring'), {
+  ssr: true,
+  loading: () => <Skeleton className='h-full w-full' />,
+});
+
+const AnimatedBeamMultipleOutputCrossPlatform = dynamic(() =>
+  import('@/components/ui/animated-beam-multiple-output-cross-platform').then(
+    (mod) => mod.AnimatedBeamMultipleOutputCrossPlatform
+  )
+);
 
 export const links = [
   {
