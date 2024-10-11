@@ -6,13 +6,16 @@ import Link from 'next/link';
 import { CoolMode } from '@/components/ui/cool-mode';
 
 const Download = () => {
-  const platform = window.navigator.userAgent.includes('Win')
-    ? 'Windows'
-    : window.navigator.userAgent.includes('Mac')
-      ? 'Mac'
-      : window.navigator.userAgent.includes('Linux')
-        ? 'Linux'
-        : 'your platform';
+  const platform =
+    typeof window !== 'undefined'
+      ? window.navigator.userAgent.includes('Win')
+        ? 'Windows'
+        : window.navigator.userAgent.includes('Mac')
+          ? 'Mac'
+          : window.navigator.userAgent.includes('Linux')
+            ? 'Linux'
+            : 'your platform'
+      : null;
 
   const platformDownloadLink =
     platform === 'Windows'
