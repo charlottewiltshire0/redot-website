@@ -3,9 +3,10 @@ import dynamic from 'next/dynamic';
 import Hero from '@/components/hero';
 import News from '@/components/news';
 import Start from '@/components/start';
+import FeaturesSkeleton from '@/components/skeleton/FeaturesSkeleton';
 
 const Features = dynamic(() => import('@/components/features'), {
-  loading: () => <p>Loading features...</p>,
+  loading: () => <FeaturesSkeleton />,
   ssr: false,
 });
 
