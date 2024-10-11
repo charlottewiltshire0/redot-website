@@ -50,12 +50,7 @@ const Hero = () => {
             </h2>
             <div className='relative mb-4 flex w-full flex-col justify-center space-y-2 sm:flex-row sm:justify-start sm:space-x-4 sm:space-y-0'>
               <Button size='lg' asChild>
-                <Link
-                  href='https://github.com/Redot-Engine/redot-engine'
-                  target='__blank'
-                >
-                  Download Latest
-                </Link>
+                <Link href='/download'>Download Latest</Link>
               </Button>
               <Button size='lg' variant='outline' asChild>
                 <Link
@@ -85,7 +80,7 @@ const Hero = () => {
                 Want to see more games created with Redot?
               </h2>
               <Button asChild>
-                <Link href='https://discord.gg/redot'>
+                <Link href='https://discord.gg/redot' target='_blank'>
                   Join Our Community &rarr;
                 </Link>
               </Button>
