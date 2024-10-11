@@ -1,4 +1,8 @@
-import { WavyBackground } from '@/components/ui/wavy-background';
+import dynamic from 'next/dynamic';
+
+const WavyBackground = dynamic(() =>
+  import('@/components/ui/wavy-background').then((mod) => mod.WavyBackground)
+);
 
 const Start = () => {
   return (
