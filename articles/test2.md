@@ -1,7 +1,9 @@
 ---
 title: "Redot 4.4 Beta Release!"
-category: "Test 2"
-date: "06-04-2023"
+description: "Get a sneak peek at our rebranded engine with a fresh Preview Environment! This beta also features a new horizon color option. Mac support coming soon. Download & explore!"
+background: "/GZngMaKXEBMOAw3.webp"
+category: "Test2"
+date: "13-10-2024"
 ---
 
 # Redot 4.4 Beta Release!
