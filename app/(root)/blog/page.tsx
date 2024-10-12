@@ -9,7 +9,7 @@ export default function Blog() {
     title: category,
     value: category.toLowerCase(),
     content: (
-      <div className=''>
+      <div>
         <ArticleItemList category={category} articles={articles[category]} />
       </div>
     ),
