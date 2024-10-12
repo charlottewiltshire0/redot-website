@@ -15,7 +15,7 @@ const Download = () => {
   }, []);
 
   const platformDownloadLink = (() => {
-    const downloadLinks = {
+    const downloadLinks: { [key: string]: string } = {
       Windows:
         'https://github.com/Redot-Engine/redot-engine/releases/download/2024101114/redot-windows-template.zip',
       macOS:
