@@ -10,7 +10,7 @@ export default function Blog() {
     value: category.toLowerCase(),
     content: (
       <div>
-        <ArticleItemList category={category} articles={articles[category]} />
+        <ArticleItemList articles={articles[category]} />
       </div>
     ),
   }));
