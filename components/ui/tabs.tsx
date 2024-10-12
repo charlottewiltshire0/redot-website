@@ -34,8 +34,6 @@ export const Tabs = ({
     setActive(newTabs[0]);
   };
 
-  const [hovering, setHovering] = useState(false);
-
   return (
     <>
       <div
@@ -50,8 +48,6 @@ export const Tabs = ({
             onClick={() => {
               moveSelectedTabToTop(idx);
             }}
-            onMouseEnter={() => setHovering(true)}
-            onMouseLeave={() => setHovering(false)}
             className={cn('relative rounded-full px-4 py-2', tabClassName)}
             style={{
               transformStyle: 'preserve-3d',
@@ -78,7 +74,6 @@ export const Tabs = ({
         tabs={tabs}
         active={active}
         key={active.value}
-        hovering={hovering}
         className={cn('mt-12', contentClassName)}
       />
     </>
