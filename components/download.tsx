@@ -4,27 +4,31 @@ import GradualSpacing from '@/components/ui/gradual-spacing';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { CoolMode } from '@/components/ui/cool-mode';
+import { useEffect, useState } from 'react';
+import { getPlatform } from '@/lib/utils';
 
 const Download = () => {
-  const platform =
-    typeof window !== 'undefined'
-      ? window.navigator.userAgent.includes('Win')
-        ? 'Windows'
-        : window.navigator.userAgent.includes('Mac')
-          ? 'Mac'
-          : window.navigator.userAgent.includes('Linux')
-            ? 'Linux'
-            : 'your platform'
-      : null;
+  const [platform, setPlatform] = useState('');
 
-  const platformDownloadLink =
-    platform === 'Windows'
-      ? 'https://github.com/Redot-Engine/redot-engine/releases/download/2024101114/redot-windows-template.zip'
-      : platform === 'Mac'
-        ? 'https://github.com/Redot-Engine/redot-engine/releases/download/2024101114/macos-template.zip'
-        : platform === 'Linux'
-          ? 'https://github.com/Redot-Engine/redot-engine/releases/download/2024101114/redot-linux-template.zip'
-          : 'https://github.com/Redot-Engine/redot-engine/releases';
+  useEffect(() => {
+    setPlatform(getPlatform());
+  }, []);
+
+  const platformDownloadLink = (() => {
+    const downloadLinks: { [key: string]: string } = {
+      Windows:
+        'https://github.com/Redot-Engine/redot-engine/releases/download/2024101114/redot-windows-template.zip',
+      macOS:
+        'https://github.com/Redot-Engine/redot-engine/releases/download/2024101114/macos-template.zip',
+      Linux:
+        'https://github.com/Redot-Engine/redot-engine/releases/download/2024101114/redot-linux-template.zip',
+    };
+
+    return (
+      downloadLinks[platform] ||
+      'https://github.com/Redot-Engine/redot-engine/releases'
+    );
+  })();
 
   return (
     <section>
@@ -37,7 +41,7 @@ const Download = () => {
                   Download Redot for
                   <GradualSpacing
                     className='font-display text-center text-4xl font-bold -tracking-widest text-black dark:text-white md:text-7xl md:leading-[5rem]'
-                    text={platform as string}
+                    text={platform}
                   />
                 </span>
               </h1>
