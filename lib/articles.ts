@@ -23,6 +23,8 @@ const getSortedArticles = (): ArticleItem[] => {
     return {
       id,
       title: matterResult.data.title,
+      description: matterResult.data.description,
+      background: matterResult.data.background,
       date: matterResult.data.date,
       category: matterResult.data.category,
     };
