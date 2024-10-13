@@ -124,11 +124,11 @@ export const features = [
 export const footer_links_first = [
   {
     name: 'Download',
-    href: 'https://github.com/Redot-Engine/redot-engine',
+    href: '/download',
   },
   {
     name: 'Documentation',
-    href: 'https://github.com/Redot-Engine/redot-docs',
+    href: 'https://docs-stable.redotengine.org/',
   },
   {
     name: 'Features',
@@ -146,8 +146,8 @@ export const footer_links_asset = [
     href: '/asset',
   },
   {
-    name: 'Press Kit',
-    href: 'https://cdn.discordapp.com/attachments/1290096105094385695/1292789668907057292/Redot_Engine_-_Brand_Kit_v.1FINAL.zip?ex=67065533&is=670503b3&hm=f707050fa0c85bbc0a02cab2602917f07aa592a19f33d0479317b6609b6bf804&',
+    name: 'Brand Kit',
+    href: 'https://cdn.discordapp.com/attachments/1290096105094385695/1292789668907057292/Redot_Engine_-_Brand_Kit_v.1FINAL.zip?ex=670cecb3&is=670b9b33&hm=8ccf0b7ef0d9999aa6cefc77131fa011c30419716dd5e9b765070f1988f28d82&',
   },
 ];
 
