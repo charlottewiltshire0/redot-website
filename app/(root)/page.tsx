@@ -4,6 +4,7 @@ import Hero from '@/components/hero';
 import News from '@/components/news';
 import Start from '@/components/start';
 import FeaturesSkeleton from '@/components/skeleton/FeaturesSkeleton';
+import Involved from '@/components/involved';
 
 const Features = dynamic(() => import('@/components/features'), {
   loading: () => <FeaturesSkeleton />,
@@ -21,6 +22,7 @@ export default function Home() {
         <Hero />
         <News />
         <Features />
+        <Involved />
       </div>
       <div className='overflow-hidden'>
         <Start />
