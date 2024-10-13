@@ -26,7 +26,7 @@ const AnimatedBeamMultipleOutputCrossPlatform = dynamic(() =>
 export const links = [
   {
     label: 'Features',
-    href: '/features/',
+    href: '/#features',
   },
   {
     label: 'Showcase',
@@ -54,67 +54,6 @@ export const social = [
   {
     label: 'Twitter',
     href: 'https://x.com/redotengine',
-  },
-];
-
-export const news = [
-  {
-    title: 'Dev snapshot: Godot 4.4 dev 3',
-    description:
-      "We haven't slowed down and are bringing you another feature-packed update!",
-    header: (
-      <Image
-        fill
-        src='https://godotengine.org/storage/blog/covers/dev-snapshot-godot-4-4-dev-3.webp'
-        alt='Dev snapshot: Godot 4.4 dev 3'
-        className='rounded-lg object-cover'
-      />
-    ),
-    href: 'https://godotengine.org/article/dev-snapshot-godot-4-4-dev-3/',
-    icon: <IconClipboardCopy className='h-4 w-4 text-neutral-500' />,
-  },
-  {
-    title: 'Godot XR update - October 2024',
-    description: 'Looking back at a year of XR development.',
-    header: (
-      <Image
-        fill
-        src='https://godotengine.org/storage/blog/covers/dev-snapshot-godot-4-4-dev-3.webp'
-        alt='Dev snapshot: Godot 4.4 dev 3'
-        className='rounded-lg object-cover'
-      />
-    ),
-    icon: <IconFileBroken className='h-4 w-4 text-neutral-500' />,
-    href: 'https://godotengine.org/article/godot-xr-update-oct-2024/',
-  },
-  {
-    title: 'Godot SDK Integrations',
-    description:
-      'A new GitHub organization to centralize the community efforts to provide support for third-party SDK...',
-    header: (
-      <Image
-        fill
-        src='https://godotengine.org/storage/blog/covers/dev-snapshot-godot-4-4-dev-3.webp'
-        alt='Dev snapshot: Godot 4.4 dev 3'
-        className='rounded-lg object-cover'
-      />
-    ),
-    icon: <IconSignature className='h-4 w-4 text-neutral-500' />,
-    href: 'https://godotengine.org/article/godot-sdk-integrations/',
-  },
-  {
-    title: 'Godot Rendering Priorities: September 2024',
-    description: "4.3 is out. It's time for an update!",
-    header: (
-      <Image
-        fill
-        src='https://godotengine.org/storage/blog/covers/dev-snapshot-godot-4-4-dev-3.webp'
-        alt='Dev snapshot: Godot 4.4 dev 3'
-        className='rounded-lg object-cover'
-      />
-    ),
-    icon: <IconTableColumn className='h-4 w-4 text-neutral-500' />,
-    href: 'https://godotengine.org/article/rendering-priorities-september-2024/',
   },
 ];
 
@@ -193,7 +132,7 @@ export const footer_links_first = [
   },
   {
     name: 'Features',
-    href: '/features',
+    href: '/#features',
   },
   {
     name: 'Source Code',
@@ -209,5 +148,29 @@ export const footer_links_asset = [
   {
     name: 'Press Kit',
     href: 'https://cdn.discordapp.com/attachments/1290096105094385695/1292789668907057292/Redot_Engine_-_Brand_Kit_v.1FINAL.zip?ex=67065533&is=670503b3&hm=f707050fa0c85bbc0a02cab2602917f07aa592a19f33d0479317b6609b6bf804&',
+  },
+];
+
+export const involved = [
+  {
+    title: 'Code',
+    description:
+      'Coders can fix bugs and add features to improve Redot Engine.',
+    header: <Image src='/report.svg' alt='report' fill />,
+    icon: <IconClipboardCopy className='h-4 w-4 text-neutral-500' />,
+  },
+  {
+    title: 'Document',
+    description:
+      'Contribute to improve API docs, write guides, or submit corrections.',
+    header: <Skeleton className='h-full' />,
+    icon: <IconClipboardCopy className='h-4 w-4 text-neutral-500' />,
+  },
+  {
+    title: 'Report',
+    description:
+      'Report engine issues to help developers improve Redot for everyone.',
+    header: <Skeleton className='h-full' />,
+    icon: <IconClipboardCopy className='h-4 w-4 text-neutral-500' />,
   },
 ];
