@@ -75,22 +75,22 @@
   display: none;
 }
 
-.article > h1 {
+.article h1 {
   @apply text-3xl font-bold my-6;
 }
 
-.article > h2 {
+.article h2 {
   @apply text-2xl font-semibold my-5;
 }
 
-.article > h3 {
+.article h3 {
   @apply text-xl font-medium my-4;
 }
 
-.article > p {
+.article p {
   @apply text-lg leading-relaxed my-4;
 }
 
-.article > a {
-  @apply text-blue-500 hover:underline;
+.article a {
+  @apply text-neutral-600 dark:text-sky-500 hover:underline;
 }
