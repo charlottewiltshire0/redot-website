@@ -20,7 +20,7 @@ const Article = async ({ params }: { params: { slug: string } }) => {
                 className='rounded-lg object-cover'
                 src={articleData.background}
                 alt={articleData.title}
-                fill='cover'
+                fill
               />
             </Link>
           </div>
