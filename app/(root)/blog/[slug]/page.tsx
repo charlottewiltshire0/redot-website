@@ -13,24 +13,22 @@ const Article = async ({ params }: { params: { slug: string } }) => {
           {/* Radial gradient for the container to give a faded look */}
           <div className='pointer-events-none absolute inset-0 flex bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black'></div>
         </div>
-        <section className='relative mx-auto h-full w-full max-w-[60rem] md:px-0'>
-          <div className='relative h-full'>
+        <section className='relative mx-auto h-full w-full max-w-[54rem] md:px-0'>
+          <div className='relative h-[24rem]'>
             <Link href={`/blog/${articleData.id}`}>
               <Image
                 className='rounded-lg object-cover'
                 src={articleData.background}
                 alt={articleData.title}
-                fill
+                fill='cover'
               />
             </Link>
           </div>
-
-          <div className='mb-12 flex justify-between'>
-            <Link href={'/'} className='flex flex-row place-items-center gap-1'>
-              <IconArrowLeft width={20} />
-              <span>Back to Home</span>
-            </Link>
-            <p>{articleData.date.toString()}</p>
+          <div className='mb-12 mt-6 flex flex-col space-y-2'>
+            <span className='text-4xl font-extrabold'>{articleData.title}</span>
+            <span className='text-neutral-700 dark:text-neutral-400'>
+              {articleData.date.toString()}
+            </span>
           </div>
           <article
             className='article'
