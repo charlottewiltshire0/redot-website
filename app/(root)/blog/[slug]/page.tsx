@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { getArticleData } from '@/lib/articles';
 import { IconArrowLeft } from '@tabler/icons-react';
 
@@ -12,7 +13,18 @@ const Article = async ({ params }: { params: { slug: string } }) => {
           {/* Radial gradient for the container to give a faded look */}
           <div className='pointer-events-none absolute inset-0 flex bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black'></div>
         </div>
-        <section className='relative mx-auto mt-3 w-full max-w-[84rem] px-4 md:mt-6 md:px-0'>
+        <section className='relative mx-auto h-full w-full max-w-[60rem] md:px-0'>
+          <div className='relative h-full'>
+            <Link href={`/blog/${articleData.id}`}>
+              <Image
+                className='rounded-lg object-cover'
+                src={articleData.background}
+                alt={articleData.title}
+                fill='cover'
+              />
+            </Link>
+          </div>
+
           <div className='mb-12 flex justify-between'>
             <Link href={'/'} className='flex flex-row place-items-center gap-1'>
               <IconArrowLeft width={20} />
