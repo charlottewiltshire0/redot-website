@@ -150,3 +150,27 @@ export const footer_links_asset = [
     href: 'https://cdn.discordapp.com/attachments/1290096105094385695/1292789668907057292/Redot_Engine_-_Brand_Kit_v.1FINAL.zip?ex=67065533&is=670503b3&hm=f707050fa0c85bbc0a02cab2602917f07aa592a19f33d0479317b6609b6bf804&',
   },
 ];
+
+export const involved = [
+  {
+    title: 'Code',
+    description:
+      'Coders can fix bugs and add features to improve Redot Engine.',
+    header: <Image src='/report.svg' alt='report' fill />,
+    icon: <IconClipboardCopy className='h-4 w-4 text-neutral-500' />,
+  },
+  {
+    title: 'Document',
+    description:
+      'Contribute to improve API docs, write guides, or submit corrections.',
+    header: <Skeleton className='h-full' />,
+    icon: <IconClipboardCopy className='h-4 w-4 text-neutral-500' />,
+  },
+  {
+    title: 'Report',
+    description:
+      'Report engine issues to help developers improve Redot for everyone.',
+    header: <Skeleton className='h-full' />,
+    icon: <IconClipboardCopy className='h-4 w-4 text-neutral-500' />,
+  },
+];
