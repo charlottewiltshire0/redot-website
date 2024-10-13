@@ -23,6 +23,13 @@ export default function Blog() {
           <div className='pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black'></div>
         </div>
         <section className='relative z-20 mx-auto h-screen w-full max-w-[84rem]'>
+          <h2 className='mb-2 text-center text-5xl font-bold leading-[1.2] tracking-tighter text-foreground'>
+            Blog
+          </h2>
+          <h3 className='mx-auto mb-8 text-balance text-center text-lg font-medium tracking-tight text-foreground/80'>
+            Insights, updates, and tutorials to enhance your game development
+            journey.
+          </h3>
           <Tabs tabs={tabs} />
         </section>
       </div>
