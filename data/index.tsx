@@ -156,21 +156,42 @@ export const involved = [
     title: 'Code',
     description:
       'Coders can fix bugs and add features to improve Redot Engine.',
-    header: <Image src='/report.svg' alt='report' fill />,
+    header: (
+      <Image
+        src='/code.webp'
+        alt='code'
+        className='rounded-lg object-cover transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_40%)] group-hover:scale-[1.02]'
+        fill
+      />
+    ),
     icon: <IconClipboardCopy className='h-4 w-4 text-neutral-500' />,
   },
   {
     title: 'Document',
     description:
       'Contribute to improve API docs, write guides, or submit corrections.',
-    header: <Skeleton className='h-full' />,
+    header: (
+      <Image
+        src='/document.webp'
+        alt='document'
+        className='rounded-lg object-cover transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_40%)] group-hover:scale-[1.02]'
+        fill
+      />
+    ),
     icon: <IconClipboardCopy className='h-4 w-4 text-neutral-500' />,
   },
   {
     title: 'Report',
     description:
       'Report engine issues to help developers improve Redot for everyone.',
-    header: <Skeleton className='h-full' />,
+    header: (
+      <Image
+        src='/report.webp'
+        alt='report'
+        className='rounded-lg object-cover transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_40%)] group-hover:scale-[1.02]'
+        fill
+      />
+    ),
     icon: <IconClipboardCopy className='h-4 w-4 text-neutral-500' />,
   },
 ];

@@ -1,20 +1,6 @@
-import ArticleItemList from '@/components/ui/article-list-item';
-import { getCategorisedArticles } from '@/lib/articles';
-import { Tabs } from '@/components/ui/tabs';
+import { Skeleton } from '@/components/ui/skeleton';
 
 export default function Blog() {
-  const articles = getCategorisedArticles();
-
-  const tabs = Object.keys(articles).map((category) => ({
-    title: category,
-    value: category.toLowerCase(),
-    content: (
-      <div>
-        <ArticleItemList articles={articles[category]} />
-      </div>
-    ),
-  }));
-
   return (
     <>
       <div className='flex flex-col overflow-hidden bg-white px-2 pb-40 pt-20 dark:bg-black md:px-4 lg:px-8'>
@@ -24,13 +10,16 @@ export default function Blog() {
         </div>
         <section className='relative z-20 mx-auto h-screen w-full max-w-[84rem]'>
           <h2 className='mb-2 text-center text-5xl font-bold leading-[1.2] tracking-tighter text-foreground'>
-            Blog
+            Showcase
           </h2>
           <h3 className='mx-auto mb-8 text-balance text-center text-lg font-medium tracking-tight text-foreground/80'>
-            Insights, updates, and tutorials to enhance your game development
-            journey.
+            Developers use Redot Engine to create immersive, captivating games.
           </h3>
-          <Tabs tabs={tabs} />
+          <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
+            {Array.from({ length: 3 }).map((_, index) => (
+              <Skeleton key={index} className='h-[18rem] w-[24rem]' />
+            ))}
+          </div>
         </section>
       </div>
     </>

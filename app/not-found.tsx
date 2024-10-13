@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function NotFound() {
   return (
     <div className='relative z-10 flex h-screen flex-col justify-center overflow-hidden bg-blue-600 px-6 text-lg text-white sm:px-36 sm:text-xl'>
@@ -15,7 +17,13 @@ export default function NotFound() {
         Don&#39;t worry, it happens to the best of us! You might want to check
         the URL, or maybe even your sense of direction.
       </div>
-      <img className='h-24 w-24' alt='' aria-hidden='true' src='/qrcode.webp' />
+      <Image
+        alt='qrcode'
+        aria-hidden='true'
+        height={96}
+        width={96}
+        src='/qrcode.webp'
+      />
     </div>
   );
 }

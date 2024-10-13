@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { getArticleData } from '@/lib/articles';
-import { IconArrowLeft } from '@tabler/icons-react';
 
 const Article = async ({ params }: { params: { slug: string } }) => {
   const articleData = await getArticleData(params.slug);
