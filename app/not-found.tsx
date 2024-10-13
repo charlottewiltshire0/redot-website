@@ -19,7 +19,7 @@ export default function NotFound() {
       </div>
       <Image
         className='h-24 w-24'
-        alt=''
+        alt='qrcode'
         aria-hidden='true'
         src='/qrcode.webp'
       />
