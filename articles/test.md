@@ -14,10 +14,10 @@ This version features a rebranding and introduces a new Preview Environment with
 
 Important Note: Currently, we do not have a Mac build available as we are still in the process of obtaining a Mac developer account certificate. We appreciate your understanding as we work towards this.
 
-While our website is still in the works, you can access the beta build through the following link to our repository's release section: Download Redot 4.4 Beta
+While our website is still in the works, you can access the beta build through the following link to our repository's release section: [Download Redot 4.4 Beta](https://github.com/Redot-Engine/redot-engine)
 
-Main Repo: https://github.com/Redot-Engine/redot-engine
-Release Page: https://github.com/Redot-Engine/redot-engine/releases/tag/2024101114
+Main Repo: [GitHub Repo](https://github.com/Redot-Engine/redot-engine)
+Release Page: [Release Page](https://github.com/Redot-Engine/redot-engine/releases/tag/2024101114)
 
 Thank you for your patience and support! We look forward to sharing more updates about the engine and other community announcements soon.
 
