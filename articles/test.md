@@ -6,7 +6,7 @@ category: "Test"
 date: "13-10-2024"
 ---
 
-# Redot 4.4 Beta Release!
+# Release!
 
 **We’re thrilled to announce the release of the beta version 4.4 of our game engine, Redot!**
 
