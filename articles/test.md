@@ -8,7 +8,7 @@ date: "13-10-2024"
 
 # Redot 4.4 Beta Release!
 
-We’re thrilled to announce the release of the beta version 4.4 of our game engine, Redot!
+**We’re thrilled to announce the release of the beta version 4.4 of our game engine, Redot!**
 
 This version features a rebranding and introduces a new Preview Environment with an updated default color scheme and a new horizon color option (see screenshot below for an example).
 
