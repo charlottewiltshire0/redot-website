@@ -74,6 +74,7 @@ export const getArticleData = async (id: string) => {
     id,
     contentHtml,
     title: metterResult.data.title,
+    background: metterResult.data.background,
     category: metterResult.data.category,
     date: moment(metterResult.data.date, 'DD-MM-YYYY').format('MMMM Do YYYY'),
   };
