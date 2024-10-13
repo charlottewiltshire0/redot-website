@@ -18,9 +18,10 @@ export default function NotFound() {
         the URL, or maybe even your sense of direction.
       </div>
       <Image
-        className='h-24 w-24'
         alt='qrcode'
         aria-hidden='true'
+        height={96}
+        width={96}
         src='/qrcode.webp'
       />
     </div>
