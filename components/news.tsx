@@ -2,14 +2,18 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import ArticleItemList from '@/components/ui/article-list-item';
 import { getCategorisedArticles } from '@/lib/articles';
+import { ArticleItem } from '@/types';
 
 const News = () => {
   const articles = getCategorisedArticles();
 
-  const latestArticles = Object.keys(articles).reduce((acc, category) => {
-    const latestInCategory = articles[category].slice(0, 2);
-    return acc.concat(latestInCategory);
-  }, []);
+  const latestArticles: ArticleItem[] = Object.keys(articles).reduce(
+    (acc: ArticleItem[], category) => {
+      const latestInCategory = articles[category].slice(0, 2);
+      return acc.concat(latestInCategory);
+    },
+    []
+  );
 
   return (
     <section className='relative mx-auto mt-16 w-full max-w-[84rem] px-4 md:mt-0 md:px-0'>
